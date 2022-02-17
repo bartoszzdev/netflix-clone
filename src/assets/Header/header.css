@@ -9,3 +9,121 @@
     width: 180px;
     height: 100px;
 }
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.lang-btn {
+    margin-right: 32px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative
+}
+
+.lang-btn select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.lang-btn select option {
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    font-weight: bold;
+}
+
+.lang-icon {
+    color: #fff;
+    font-size: 19px;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.arrow-icon {
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.enter-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer
+}
+
+.main-content {
+    margin-top: 125px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.title {
+   font-size: 3.1rem;
+   font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    margin-top: 24px
+}
+
+span {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: 24px
+}
+
+form {
+    display: flex;
+    margin-top: 19px;
+}
+
+.input-email {
+    width: 480px;
+    padding: 19px 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border: 1px solid #aaa
+}
+
+.join-btn {
+    padding: 15px 19px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #e50914;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative
+}
