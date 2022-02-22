@@ -28,3 +28,28 @@ body {
   background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
   backdrop-filter: brightness(50%);
 }
+
+@media screen and (max-width: 950px) {
+  .container-main {
+    height: 135vh
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container-main {
+    height: 120vh
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container-main {
+    height: 90vh;
+    background-position: center;
+  }
+
+  .layer {
+    /* background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%); */
+    backdrop-filter: brightness(75%);
+  }
+}
+
