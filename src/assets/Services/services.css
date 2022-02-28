@@ -9,7 +9,7 @@
 .service-item-01 {
     display: flex;
     height: 75vh;
-    padding: 30px 0 50px 0;
+    padding: 30px 30px 50px 30px;
     border-bottom: 8px solid #222;
 }
 
@@ -28,13 +28,13 @@
 }
 
 .text-01 h2 {
-    font-size: 2.9rem;
+    font-size: 3rem;
     margin-bottom: 25px
 }
 
 .text-01 p {
     max-width: 500px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .info-card-01 {
@@ -63,18 +63,298 @@
     height: 75vh;
     display: flex;
     flex-direction: row-reverse;
-    padding: 30px 0 50px 0;
+    padding: 30px 30px 50px 30px;
     border-bottom: 8px solid #222;
 }
 
 .info-text-02 {
-    width: 50%
+    width: 50%;
+}
+
+.text-02 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-02 h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    max-width: 400px
+}
+
+.text-02 p {
+    max-width: 500px;
+    font-size: 1.7rem;
 }
 
 .info-card-02 {
-    width: 50%
+    width: 50%;
+    position: relative;
+}
+
+.card-container-02 {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-img-02 {
-    width: 500px
+    width: 500px;
+}
+
+.card-animation-02 {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    transform: translateY(-130%);
+    background: #000;
+    border: 2px solid rgba(255,255,255,.25);
+    border-radius: 0.75em;
+}
+
+.movie-card-animation {
+    width: 50px;
+    height: 100%
+}
+
+.card-animation-text {
+    margin-left: 18px;
+}
+
+.card-animation-text h5 {
+    color: #0071eb;
+    font-size: 0.9rem;
+    font-weight: lighter
+}
+
+.card-animation-02::after {
+    width: 3em;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    content: '';
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -moz-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+/* SERVICE 03 */
+
+.service-item-03 {
+    height: 75vh;
+    display: flex;
+    padding: 30px 30px 50px 30px;
+    border-bottom: 8px solid #222;
+}
+
+.info-text-03 {
+    width: 50%;
+    position: relative;
+}
+
+.text-03 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 20px
+}
+
+.text-03 h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.text-03 p {
+    max-width: 500px;
+    font-size: 1.7rem;
+}
+
+.info-card-03 {
+    width: 50%;
+    padding: 0 35px;
+    position: relative;
+}
+
+.card-img-03 {
+    width: 580px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+
+.card-video-03 {
+    width: 360px;
+    height: 60%;
+    position: absolute;
+    top: 25px;
+    left: 150px;
+    z-index: 0
+}
+
+/* SERVICE 04 */
+
+.service-item-04 {
+    height: 75vh;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 30px 50px 30px;
+    border-bottom: 8px solid #222;
+}
+
+.info-text-04 {
+    width: 50%;
+}
+
+.text-04 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-04 h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    max-width: 400px
+}
+
+.text-04 p {
+    max-width: 550px;
+    font-size: 1.7rem;
+}
+
+.info-card-04 {
+    width: 50%;
+    position: relative;
+}
+
+.card-img-04 {
+    width: 500px;
+    position: absolute;
+    top: 14px;
+    right: 22px
+}
+
+@media screen and (max-width: 1264px) {
+    .card-img-01 {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card-video-01 {
+        width: 80%;
+    }
+
+    .card-container-02 {
+        top: 20px;
+        right: 50px;
+    }
+
+    .card-img-02 {
+        width: 90%;
+        height: 100%
+    }
+
+    .card-animation-02 {
+        width: 65%;
+        transform: translateY(-90%);
+    }
+
+    .card-img-03 {
+        width: 90%;
+        height: 100%;
+    }
+    
+    .card-video-03 {
+        width: 55%;
+        height: 65%;
+        position: absolute;
+        top: 18px;
+        left: 120px
+    }
+
+    .info-card-04 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img-04 {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .service-item-01, .service-item-02, .service-item-03, .service-item-04 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 130vh;
+        padding: 100px 10px 80px 10px;
+    }
+
+    .info-text-01, .info-text-02, .info-text-03, .info-text-04 {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* SERVICE 01 */
+
+    .text-01 {
+        width: 100%;
+        height: 100%;
+        right: 0;
+        z-index: 2
+    }
+    
+    .text-01 h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .text-01 p {
+        max-width: 800px;
+        font-size: 1.2rem;
+        margin: 0 auto;
+    }
+
+    .info-card-01 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card-img-01 {
+        width: 90%;
+        max-width: 600px;
+        position: inherit;
+        top: 0;
+        left: 0
+    }
+    
+    .card-video-01 {
+        width: 55%;
+        top: 100px;
+        left: 200px;
+    }
 }
