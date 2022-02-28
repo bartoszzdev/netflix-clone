@@ -112,10 +112,16 @@
     padding: 8px 12px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     transform: translateY(-130%);
     background: #000;
     border: 2px solid rgba(255,255,255,.25);
     border-radius: 0.75em;
+}
+
+.card-movie-02 {
+    display: flex;
+    align-items: center;
 }
 
 .movie-card-animation {
@@ -308,8 +314,8 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 130vh;
-        padding: 100px 10px 80px 10px;
+        /* height: 130vh; */
+        padding: 80px 10px 0px 10px;
     }
 
     .info-text-01, .info-text-02, .info-text-03, .info-text-04 {
@@ -318,6 +324,10 @@
     }
 
     /* SERVICE 01 */
+
+    .service-item-01 {
+        height: 110vh
+    }
 
     .text-01 {
         width: 100%;
@@ -329,32 +339,173 @@
     .text-01 h2 {
         font-size: 2.5rem;
         margin-bottom: 15px;
+        margin-top: 80px;
     }
     
     .text-01 p {
         max-width: 800px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin: 0 auto;
     }
 
     .info-card-01 {
-        display: flex;
-        justify-content: center;
         width: 100%;
         height: 100%;
+        margin-top: 50px
     }
     
     .card-img-01 {
         width: 90%;
         max-width: 600px;
-        position: inherit;
+        height: 80%;
         top: 0;
-        left: 0
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .card-video-01 {
-        width: 55%;
-        top: 100px;
-        left: 200px;
+        width: 100%;
+        max-width: 440px;
+        top: 105px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* SERVICE 02 */
+
+    .service-item-02 {
+        height: 120vh
+    }
+    
+    .text-02 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text-02 h2 {
+        width: 100%;
+        max-width: none;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .text-02 p {
+        max-width: 800px;
+        font-size: 1.3rem;
+    }
+    
+    .info-card-02 {
+        width: 100%;
+    }
+    
+    .card-container-02 {
+        width: 100%;
+        height: 80%;
+        position: inherit;
+        top: 0;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .card-img-02 {
+        width: 600px;
+        height: 100%
+    }
+    
+    .card-animation-02 {
+        width: 400px;
+        transform: translateY(-130%);
+    }
+
+    /* SERVICE 03 */
+
+    .service-item-03 {
+        height: 110vh
+    }
+
+    .info-text-03 {
+        width: 100%;
+    }
+    
+    .text-03 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        z-index: 3
+    }
+    
+    .text-03 h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        margin-top: 60px
+    }
+    
+    .text-03 p {
+        max-width: 800px;
+        font-size: 1.3rem;
+    }
+    
+    .info-card-03 {
+        width: 100%;
+        height: 70%;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-img-03 {
+        width: 600px;
+    }
+    
+    .card-video-03 {
+        width: 350px;
+        position: inherit;
+        top: -50px;
+        left: 0px;
+    }
+
+    /* SERVICE 04 */
+
+    .service-item-04 {
+        height: 120vh
+    }
+
+    .info-text-04 {
+        width: 100%;
+    }
+    
+    .text-04 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text-04 h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        max-width: none
+    }
+    
+    .text-04 p {
+        max-width: 800px;
+        font-size: 1.3rem;
+    }
+    
+    .info-card-04 {
+        width: 100%;
+    }
+    
+    .card-img-04 {
+        width: 550px;
+        position: absolute;
+        top: 20px;
+        right: 50%;
+        transform: translateX(50%);
     }
 }
