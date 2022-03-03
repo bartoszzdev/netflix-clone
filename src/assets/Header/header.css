@@ -1,3 +1,23 @@
+.container-main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/ed0b5df9-ba9d-4534-bd09-57993daeda56/52609230-dd78-4dba-82a1-8bb3ac3803e6/BR-pt-20220214-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-position: center auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+  
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    backdrop-filter: brightness(50%);
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -143,6 +163,10 @@ form {
 }
 
 @media screen and (max-width: 950px) {
+    .container-main {
+        height: 135vh
+    }
+
     .logo {
         width: 150px;
         height: 80px
@@ -171,15 +195,22 @@ form {
     }
 
     .join-btn {
-        padding: 6px 10px;
-        font-size: 1.1rem;
-        font-weight: normal;
-        margin-top: 10px;
+        padding: 10px 14px;
+        margin-top: 14px;
+        font-size: 1rem;
         border-radius: 2px;
+    }
+    
+    .join-btn svg {
+        font-size: 19px;
     }
 }
 
 @media screen and (max-width: 750px) {
+    .container-main {
+        height: 120vh
+    }
+
     .title {
         font-size: 2.7rem;
     }
@@ -214,6 +245,15 @@ form {
 }
 
 @media screen and (max-width: 550px) {
+    .container-main {
+        height: 90vh;
+        background-position: center;
+    }
+    
+    .layer {
+        backdrop-filter: brightness(75%);
+    }
+
     .header {
         padding: 0 2%;
     }
@@ -263,6 +303,11 @@ form {
         width: 320px;
         font-size: 1.05rem;
         font-weight: bold
+    }
+
+    .input-email {
+        padding: 15px 12px;
+        font-size: 1rem;
     }
 
     .join-btn {
