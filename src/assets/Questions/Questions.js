@@ -1,8 +1,8 @@
 import React from 'react'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
-import './questions.css'
 import SingleQuestion from './SingleQuestion'
 import { questions } from './data'
+import './questions.css'
 
 function Questions() {
     return (

@@ -1,0 +1,136 @@
+/* SERVICE 04 */
+
+.service-item-04 {
+    height: 75vh;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 30px 50px 30px;
+    border-bottom: 8px solid #222;
+}
+
+.info-text-04 {
+    width: 50%;
+}
+
+.text-04 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-04 h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    max-width: 400px
+}
+
+.text-04 p {
+    max-width: 550px;
+    font-size: 1.7rem;
+}
+
+.info-card-04 {
+    width: 50%;
+    position: relative;
+}
+
+.card-img-04 {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 50px
+}
+
+@media screen and (max-width: 1264px) {
+    .info-card-04 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img-04 {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .service-item-04 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 80px 10px 0px 10px;
+    }
+
+    .info-text-04 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-item-04 {
+        height: 120vh
+    }
+
+    .info-text-04 {
+        width: 100%;
+    }
+    
+    .text-04 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text-04 h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        max-width: none
+    }
+    
+    .text-04 p {
+        max-width: 800px;
+        font-size: 1.3rem;
+    }
+    
+    .info-card-04 {
+        width: 100%;
+    }
+    
+    .card-img-04 {
+        width: 550px;
+        position: absolute;
+        top: 20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card-img-04 {
+        width: 500px;
+        position: absolute;
+        top: 20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .service-item-04 {
+        height: 90vh;
+        padding: 60px 25px 0px 25px;
+    }
+    
+    .text-04 h2 {
+        font-size: 1.7rem;
+    }
+    
+    .text-04 p {
+        font-size: 1.1rem;
+    }
+    
+    .card-img-04 {
+        width: 82%;
+    }
+}

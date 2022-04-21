@@ -1,0 +1,229 @@
+/* SERVICE 02 */
+
+.service-item-02 {
+    height: 75vh;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 30px 50px 30px;
+    border-bottom: 8px solid #222;
+}
+
+.info-text-02 {
+    width: 50%;
+}
+
+.text-02 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-02 h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    max-width: 400px
+}
+
+.text-02 p {
+    max-width: 500px;
+    font-size: 1.7rem;
+}
+
+.info-card-02 {
+    width: 50%;
+    position: relative;
+}
+
+.card-container-02 {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img-02 {
+    width: 500px;
+}
+
+.card-animation-02 {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-130%);
+    background: #000;
+    border: 2px solid rgba(255,255,255,.25);
+    border-radius: 0.75em;
+}
+
+.card-movie-02 {
+    display: flex;
+    align-items: center;
+}
+
+.movie-card-animation {
+    width: 50px;
+    height: 100%
+}
+
+.card-animation-text {
+    margin-left: 18px;
+}
+
+.card-animation-text h5 {
+    color: #0071eb;
+    font-size: 0.9rem;
+    font-weight: lighter
+}
+
+.card-animation-02::after {
+    width: 3em;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    content: '';
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -moz-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 1264px) {
+    .card-container-02 {
+        top: 20px;
+        right: 50px;
+    }
+
+    .card-img-02 {
+        width: 90%;
+        height: 100%
+    }
+
+    .card-animation-02 {
+        width: 65%;
+        transform: translateY(-90%);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .service-item-02 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 80px 10px 0px 10px;
+    }
+
+    .info-text-02 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-item-02 {
+        height: 120vh
+    }
+    
+    .text-02 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text-02 h2 {
+        width: 100%;
+        max-width: 500px;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .text-02 p {
+        max-width: 800px;
+        font-size: 1.3rem;
+    }
+    
+    .info-card-02 {
+        width: 100%;
+    }
+    
+    .card-container-02 {
+        width: 100%;
+        height: 80%;
+        position: inherit;
+        top: 0;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .card-img-02 {
+        width: 600px;
+        height: 100%
+    }
+    
+    .card-animation-02 {
+        width: 400px;
+        transform: translateY(-130%);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card-container-02 {
+        width: 100%;
+        height: 80%;
+    }
+    
+    .card-img-02 {
+        width: 90%;
+    }
+    
+    .card-animation-02 {
+        width: 60%;
+        transform: translateY(-120%);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .service-item-02 {
+        height: 90vh;
+        padding: 60px 25px 0px 25px;
+    }
+    
+    .text-02 h2 {
+        font-size: 1.7rem;
+    }
+    
+    .text-02 p {
+        font-size: 1.1rem;
+    }
+    
+    .card-container-02 {
+        width: 100%;
+        height: 80%;
+        position: inherit;
+        top: 0;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .card-img-02 {
+        width: 80%;
+    }
+    
+    .card-animation-02 {
+        padding: 3px 10px;
+        width: 60%;
+        transform: translateY(-120%);
+    }
+}
