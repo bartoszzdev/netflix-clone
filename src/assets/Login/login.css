@@ -1,0 +1,151 @@
+.login-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/ed0b5df9-ba9d-4534-bd09-57993daeda56/52609230-dd78-4dba-82a1-8bb3ac3803e6/BR-pt-20220214-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+}
+
+.login-layer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.492);
+    z-index: -1;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 60px 68px;
+    background-color: rgba(0, 0, 0, 0.778);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-form h3 {
+    text-align: left;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 28px
+}
+
+.signup-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem
+}
+
+.signup-login input {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+    border: none;
+}
+
+.signup-login input[type=text] {
+    margin-bottom: 16px;
+}
+
+.signup-login button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    background-color: #e50914;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer
+}
+
+.signup-login div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-login div span,
+.signup-login div a {
+    margin: 0;
+    font-size: 13px;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.signup-login div span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.signup-login div span::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 2px;
+    z-index: 100;
+    cursor: pointer
+}
+
+.signup-login div a:hover,
+.login-form p:first-of-type a:hover,
+.login-form p a:hover {
+    text-decoration: underline;
+}
+
+.login-form p:first-of-type {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 16px;
+}
+
+.login-form p:first-of-type a {
+    text-decoration: none;
+    color: #fff
+}
+
+.login-form p {
+    margin-top: 11px;
+    font-size: 13px;
+    color: #8c8c8c;
+}
+
+.login-form p a {
+    color: #0171eb;
+    text-decoration: none;
+}
+
+@media (max-width: 740px) {
+    .login-container {
+        width: 100%;
+        height: 100vh;
+        background-image: none;
+        background-color: #000;
+    }
+
+    .login-container .logo {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .login-form {
+        max-width: none;
+        margin: 0;
+        padding: 0px 36px;
+        border-radius: 0;
+    }
+
+    .signup-login input {
+        width: 100%;
+    }
+}

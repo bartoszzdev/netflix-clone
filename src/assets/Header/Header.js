@@ -1,6 +1,7 @@
 import React from 'react'
 import './header.css'
 import { MdLanguage, MdArrowDropDown, MdOutlineKeyboardArrowRight } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
@@ -18,9 +19,11 @@ function Header() {
                                 </select>
                                 <MdArrowDropDown className='arrow-icon' />
                             </div>
-                            <button type='button' className='enter-btn'>
-                                Entrar
-                            </button>
+                            <Link to='/login'>
+                                <button type='button' className='enter-btn'>
+                                    Entrar
+                                </button>
+                            </Link>
                         </div>
                     </header>
 

@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    background-color: #000;
+}
+
+.footer img {
+    width: 200px;
+    height: 100px;
+}
+
+.footer span {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #757575;
+    text-align: center;
+}
